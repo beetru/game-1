@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="body">
+	<div class="box2">
+		<h1 style="margin-left: 0px; margin-top: 0px; color: whitesmoke;">Find: Real Knife</h1>
+	</div>
+
+		<audio controls>
+    <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+    <source src="undertale_100. MEGALOVANIA.mp3" type="audio/mpeg">
+    	</audio>
+
+	<div class="box1">
+		<h1 class="text">HP:</h1>
+	</div>
+	<div class="hp">
+	</div>
+
+	<button class="mix">Mix</button>
+
+	<div class="target1">
+	</div>
+
+	<div class="target2">
+	</div>
+
+	<div class="target3">
+	</div>
+
+	<div class="target4">
+	</div>
+
+	<div class="target5">
+	</div>
+
+	<div class="target6">
+	</div>
+
+	<script type="text/javascript">
+	let attempts = 3;
+
+	// document.querySelector(".btn1").onclick = function() {
+	// 	attempts = attempts - 1;
+	// 	console.log(attempts)
+	// }
+
+	// document.querySelector(".btn2").onclick = function() {
+	// 	attempts = attempts - 1;
+	// 	console.log(attempts)
+	// 	if (attempts <= 0) {
+	// 		alert("end")
+	// 	}
+	// }
+
+	let hp = 900;
+
+	document.querySelector(".mix").onclick = function() {
+		document.querySelector(".target1").style.left = "1065px"
+		document.querySelector(".target1").style.top = "570px"
+		document.querySelector(".target1").style.backgroundColor = "black"
+		document.querySelector(".target1").style.backgroundImage = "url(none)"
+		
+		document.querySelector(".target2").style.left = "415px"
+		document.querySelector(".target2").style.top = "570px"
+		document.querySelector(".target2").style.backgroundColor = "black"
+		document.querySelector(".target2").style.backgroundImage = "url(none)"
+		
+		document.querySelector(".target3").style.left = "745px"
+		document.querySelector(".target3").style.top = "320px"
+		document.querySelector(".target3").style.backgroundColor = "black"
+		document.querySelector(".target3").style.backgroundImage = "url(none)"
+		
+		document.querySelector(".target4").style.left = "745px"
+		document.querySelector(".target4").style.top = "570px"
+		document.querySelector(".target4").style.backgroundColor = "black"
+		document.querySelector(".target4").style.backgroundImage = "url(none)"
+
+		
+		document.querySelector(".target5").style.left = "415px"
+		document.querySelector(".target5").style.top = "320px"
+		document.querySelector(".target5").style.backgroundColor = "black"
+		document.querySelector(".target5").style.backgroundImage = "url(none)"
+		
+		document.querySelector(".target6").style.left = "1065px"
+		document.querySelector(".target6").style.top = "320px"
+		document.querySelector(".target6").style.backgroundColor = "black"
+		document.querySelector(".target6").style.backgroundImage = "url(none)"
+
+		alert("Find the Real Knife")
+	}
+
+	document.querySelector(".target1").onclick = function() {
+		hp = hp - 300
+		document.querySelector(".hp").style.width = hp + "px"
+		alert("Not this! -300 HP")
+			document.querySelector(".target1").style.backgroundImage = "url(blast.png)"
+			document.querySelector(".target1").style.backgroundSize = "100% 100%"
+		if (hp<=0) {
+		alert("You lose! Stay DETERMINED!")
+			document.querySelector(".target1").style.display = "none"
+			document.querySelector(".target2").style.display = "none"
+			document.querySelector(".target3").style.display = "none"
+			document.querySelector(".target4").style.display = "none"
+			document.querySelector(".target5").style.display = "none"
+			document.querySelector(".target6").style.display = "none"
+		}
+	}
+
+	document.querySelector(".target2").onclick = function() {
+		hp = hp - 300
+		document.querySelector(".hp").style.width = hp + "px"
+		alert("Not this! -300 HP")
+			document.querySelector(".target2").style.backgroundImage = "url(blbon.png)"
+			document.querySelector(".target2").style.backgroundSize = "120% 100%"
+		if (hp<=0) {
+		alert("You lose! Stay DETERMINED!")
+			document.querySelector(".target1").style.display = "none"
+			document.querySelector(".target2").style.display = "none"
+			document.querySelector(".target3").style.display = "none"
+			document.querySelector(".target4").style.display = "none"
+			document.querySelector(".target5").style.display = "none"
+			document.querySelector(".target6").style.display = "none"
+		}
+	}
+
+	document.querySelector(".target3").onclick = function() {
+		hp = hp - 300
+		document.querySelector(".hp").style.width = hp + "px"
+		alert("Not this! -300 HP")
+			document.querySelector(".target3").style.backgroundImage = "url(bone4.png)"
+			document.querySelector(".target3").style.backgroundSize = "100% 100%"
+		if (hp<=0) {
+		alert("You lose! Stay DETERMINED!")
+			document.querySelector(".target1").style.display = "none"
+			document.querySelector(".target2").style.display = "none"
+			document.querySelector(".target3").style.display = "none"
+			document.querySelector(".target4").style.display = "none"
+			document.querySelector(".target5").style.display = "none"
+			document.querySelector(".target6").style.display = "none"
+		}
+	}
+
+	document.querySelector(".target5").onclick = function() {
+		hp = hp - 300
+		document.querySelector(".hp").style.width = hp + "px"
+		alert("Not this! -300 HP")
+			document.querySelector(".target5").style.backgroundImage = "url(orbon.png)"
+			document.querySelector(".target5").style.backgroundSize = "100% 100%"
+		if (hp<=0) {
+		alert("You lose! Stay DETERMINED!")
+			document.querySelector(".target1").style.display = "none"
+			document.querySelector(".target2").style.display = "none"
+			document.querySelector(".target3").style.display = "none"
+			document.querySelector(".target4").style.display = "none"
+			document.querySelector(".target5").style.display = "none"
+			document.querySelector(".target6").style.display = "none"
+		}
+	}
+
+	document.querySelector(".target6").onclick = function() {
+		hp = hp - 300
+		document.querySelector(".hp").style.width = hp + "px"
+		alert("Not this! -300 HP")
+			document.querySelector(".target6").style.backgroundImage = "url(sans.png)"
+			document.querySelector(".target6").style.backgroundSize = "100% 100%"
+		if (hp<=0) {
+		alert("You lose! Stay DETERMINED!")
+			document.querySelector(".target1").style.display = "none"
+			document.querySelector(".target2").style.display = "none"
+			document.querySelector(".target3").style.display = "none"
+			document.querySelector(".target4").style.display = "none"
+			document.querySelector(".target5").style.display = "none"
+			document.querySelector(".target6").style.display = "none"
+		}
+	}
+
+	document.querySelector(".target4").onclick = function() {
+			document.querySelector(".target4").style.backgroundImage = "url(knife.png)"
+			document.querySelector(".target4").style.backgroundSize = "100% 100%"
+		alert("You found it")
+			document.querySelector(".target1").style.backgroundImage = "url(blast.png)"
+			document.querySelector(".target1").style.backgroundSize = "120% 100%"
+
+			document.querySelector(".target2").style.backgroundImage = "url(blbon.png)"
+			document.querySelector(".target2").style.backgroundSize = "100% 100%"
+
+			document.querySelector(".target3").style.backgroundImage = "url(bone4.png)"
+			document.querySelector(".target3").style.backgroundSize = "100% 100%"
+
+			document.querySelector(".target4").style.backgroundImage = "url(knife.png)"
+			document.querySelector(".target4").style.backgroundSize = "100% 100%"
+
+			document.querySelector(".target5").style.backgroundImage = "url(orbon.png)"
+			document.querySelector(".target5").style.backgroundSize = "100% 100%"
+
+			document.querySelector(".target6").style.backgroundImage = "url(sans.png)"
+			document.querySelector(".target6").style.backgroundSize = "100% 100%"
+	}
+
+
+</script>
+
+</body>
+</html>

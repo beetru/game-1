@@ -1,0 +1,57 @@
+!<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div >
+		
+	</div>
+
+
+	<button class="mix">перемешать</button>
+
+	<button class="btn1">кнопка 1</button>
+	<button class="btn2">кнопка 2</button>
+
+
+	<script type="text/javascript">
+		let attemps = 3;
+
+		document.querySelector(".btn1").onclick = function() {//это механика в дивах
+			attemps = attemps - 1;
+			console.log(attemps);
+		}
+		document.querySelector(".btn2").onclick = function() {
+			attemps = attemps - 1;
+			console.log()
+			if (attemps <=0) {
+				alert("все")
+			}
+		}
+
+		/*
+			нажатие на mix {
+				див1 меняет лефт на 500пкс
+				див2 меняет позицию лефт на 200пкс
+				.....
+
+				див 1 меняет бэкграунд на черный
+				див 2 меняет бэкграунд на черный
+
+			}
+
+
+			нажатие на див1 {
+				бг имейдж проявляется на див 1
+				минуус попытка
+				алерт верно или не верно
+			}
+
+		*/
+
+	</script>
+</body>
+</html>
